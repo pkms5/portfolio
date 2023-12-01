@@ -1,0 +1,257 @@
+/* 피씨 부분 **************************/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style:none;
+}
+
+nav.bg-dark{
+    background-color: #fff !important;
+}
+.bg-dark .navbar-nav .nav-link{
+    color:#333 !important;
+}
+
+.bg-dark .navbar-nav .nav-link:hover{
+    color:#002c5f !important;
+}
+
+
+
+@media screen and (min-width:768px){
+    
+    #demo{
+        display:block;
+    
+    }
+    #demo2{
+        display:none;
+    }
+    /*네비게이션*/
+    
+    #collapsibleNavbar{
+        position:absolute;
+        right:20px;
+    }
+    
+    nav.bg-dark{
+        background-color: #fff !important;
+    }
+    .bg-dark .navbar-nav .nav-link{
+        color:#333 !important;
+    }
+    
+    .bg-dark .navbar-nav .nav-link:hover{
+        color:#002c5f !important;
+    }
+    /*네비게이션 끝*/
+    
+    article{
+        text-align: center;
+        float:left;
+        width:33.33%;
+        height: 425px;
+    }
+    article h1{
+        line-height:425px;
+        color:#002c5f;
+        font-weight:bold;
+    }
+    article:nth-of-type(4):hover{
+        background-color: rgba(0,44,95,1);
+    }
+    article:nth-of-type(4):hover h1{
+        color:#fff;
+    }
+    article:nth-of-type(7):hover{
+        background-color: rgba(0,44,95,1);
+    }
+    article:nth-of-type(7):hover h1{
+        color:#fff;
+    }
+    article:nth-of-type(10):hover{
+        background-color: rgba(0,44,95,1);
+    }
+    article:nth-of-type(10) h1{
+        font-size:30px;
+    }
+    article:nth-of-type(10):hover h1{
+        color:#fff;
+    }
+    article:nth-of-type(1){width:66.66%; background-color: aqua;}
+    article:nth-of-type(2){float:right; height:850px; background-color: blueviolet;}
+    article:nth-of-type(3){background-color:antiquewhite;}
+    article:nth-of-type(4){background-color:#fff;}
+    article:nth-of-type(5){height: 850px; background-color:#339;}
+    article:nth-of-type(6){background-color:#333;}
+    article:nth-of-type(7){background-color:#fff;}
+    article:nth-of-type(8){width:66.66%; background-color:violet;}
+    article:nth-of-type(9){background-color:wheat;}
+    article:nth-of-type(10){background-color:#fff;}
+    article:nth-of-type(11){background-color:palegreen;}
+    article:nth-of-type(5)>img:nth-child(1){display:block;}
+    article:nth-of-type(5)>img:nth-child(2){display:none;}
+    
+    .txt-wrap{
+        width:700px;
+        position:absolute;
+        left:200px;
+        bottom:50px;
+        color:#fff;
+    }
+    .txt-wrap p{
+        font-size:50px;
+    }
+    
+    #footer_pc{
+        display:block;
+    }
+    #footer_mo{
+        display:none;
+    }
+}
+
+/* 피씨 부분 끝 **************************/
+
+/* 모바일 부분 **************************/
+@media screen and (max-width:767px){
+    #demo{
+        display:none;
+    }
+    #demo2{
+        display:block;
+    }
+    article{
+        width:100% !important;
+        height: 425px !important;
+    }
+    article:nth-of-type(1){background-color: aqua;}
+    article:nth-of-type(2){background-color: blueviolet;}
+    article:nth-of-type(3){background-color:antiquewhite;}
+    article:nth-of-type(4){background-color:#fff;}
+    article:nth-of-type(5){background-color:#339;}
+    article:nth-of-type(6){background-color:#333;}
+    article:nth-of-type(7){background-color:#fff;}
+    article:nth-of-type(8){background-color:violet;}
+    article:nth-of-type(9){background-color:wheat;}
+    article:nth-of-type(10){background-color:#fff;}
+    article:nth-of-type(11){background-color:palegreen;}
+    
+    article:nth-of-type(5)>img:nth-child(1){display:none;}
+    article:nth-of-type(5)>img:nth-child(2){display:block;}
+
+    #footer_pc{
+        display:none;
+    }
+    #footer_mo{
+        display:block;
+    }
+    article{
+        text-align: center;
+        float:left;
+        width:33.33%;
+        height: 425px;
+    }
+    article h1{
+        line-height:425px;
+        color:#002c5f;
+        font-weight:bold;
+    }
+    article:nth-of-type(4):hover{
+        background-color: rgba(0,44,95,1);
+    }
+    article:nth-of-type(4):hover h1{
+        color:#fff;
+    }
+    article:nth-of-type(7):hover{
+        background-color: rgba(0,44,95,1);
+    }
+    article:nth-of-type(7):hover h1{
+        color:#fff;
+    }
+    article:nth-of-type(10):hover{
+        background-color: rgba(0,44,95,1);
+    }
+    article:nth-of-type(10):hover h1{
+        color:#fff;}
+    .txt-wrap{
+        width:450px;
+        position:absolute;
+        left:30px;
+        bottom:200px;
+        color:#fff;
+    }
+    .txt-wrap span{
+        font-size: 15px;
+    }
+    .txt-wrap p{
+        font-size:30px;
+    }
+    
+    #footer_pc{
+        display:none;
+    }
+    #footer_mo{
+        display:block;
+    }    
+}
+
+/* 모바일 부분 끝 **************************/
+
+#footer_pc{
+    background-color: black; color:#fff;
+}
+#footer_pc h4{
+    padding-bottom:50px;
+}
+#footer_pc li{
+    padding-bottom:15px;
+}
+#copyright{
+    padding-bottom:50px;
+}
+
+#footer_mo{
+    background-color: #000 !important;
+}
+.card{
+    background-color: #000 !important;
+}
+.card-header{
+    background-color: #000 !important;
+    border: none !important;
+}
+.card-header a{
+    color:#fff !important;
+}
+
+.card-body{
+    padding-top:0 !important;
+    color:#ddd !important;
+}
+
+.card-body li{
+    color:#fff !important;
+    margin-bottom: 5px;
+}
+.card-body i:first-child{
+    margin: 0;
+}
+.card-body i{
+    margin:0 5px 0 5px;
+    font-size:25px;
+}
+#copyright_mo{
+    color:#fff !important;
+    margin-left:20px;
+    padding-bottom: 30px;
+}
+.navbar-toggler{
+    border:1px solid rgba(0,0,0,0.5) !important;
+}
+.navbar-dark .navbar-toggler-icon{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;}
+
