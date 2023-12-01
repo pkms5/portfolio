@@ -76,8 +76,8 @@ nav.bg-dark{
     article:nth-of-type(10):hover{
         background-color: rgba(0,44,95,1);
     }
-    article:nth-of-type(10) h1{
-        font-size:30px;
+    article h1{
+        font-size:28px;
     }
     article:nth-of-type(10):hover h1{
         color:#fff;
@@ -124,7 +124,14 @@ nav.bg-dark{
     }
     #demo2{
         display:block;
+        height: 700px;
     }
+
+    #demo2 .carousel-inner{
+        display: block;
+        height:700px;
+    }
+
     article{
         width:100% !important;
         height: 425px !important;
@@ -179,10 +186,10 @@ nav.bg-dark{
     article:nth-of-type(10):hover h1{
         color:#fff;}
     .txt-wrap{
-        width:450px;
+        width:280px;
         position:absolute;
         left:30px;
-        bottom:200px;
+        bottom:620px;
         color:#fff;
     }
     .txt-wrap span{
