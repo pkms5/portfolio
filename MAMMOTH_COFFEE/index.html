@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAMMOTH COFFEE</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        /* 곰 이미지 높이 800px이하에서 숨기기 */
+        window.addEventListener('resize', function() {
+            hideElementOnSmallScreen();
+        });
+
+        function hideElementOnSmallScreen() {
+            const gomElement = document.getElementById('gom');
+            const windowHeight = window.innerHeight;
+
+            if (windowHeight < 800) { 
+                gomElement.style.display = 'none';
+            } else {
+                gomElement.style.display = 'block';
+            }
+        }
+
+        window.addEventListener('load', function() {
+            hideElementOnSmallScreen();
+        });
+        /* 곰 이미지 높이 800px이하에서 숨기기 종료 */   
+        /* lol의 숫자 증가 애니메이션 */
+        const counter = ($counter, max) => {
+        let now = max;
+
+        const handle = setInterval(() => {
+            $counter.innerHTML = Math.ceil(max - now);
+        
+            // 목표수치에 도달하면 정지
+            if (now < 1) {
+            clearInterval(handle);
+            }
+            
+            // 증가되는 값이 계속하여 작아짐
+            const step = now / 10;
+            
+            // 값을 적용시키면서 다음 차례에 영향을 끼침
+            now -= step;
+        }, 50);
+        }
+
+        window.onload = () => {
+        // 카운트를 적용시킬 요소
+        const $counter = document.querySelector(".count");
+        
+        // 목표 수치
+        const max = 500;
+        
+        setTimeout(() => counter($counter, max), 200);
+        } 
+        /* lol의 숫자 증가 애니메이션 종료 */ 
+    </script>
+</head>
+<body>
+    <!-- 배경 동영상 -->
+    <figure class="mommoth_video">
+        <video loop muted autoplay>
+            <source src="img/mommoth.mp4" type="video/mp4"/>
+        </video>
+    </figure>
+    <!-- 배경 동영상 종료 -->
+    
+    
+
+    <!-- header -->
+    <header>
+        <div id="header">
+            <!-- 로고 -->
+            <h1 id="m_logo"><img src="img/f_logo.png" alt="매머드 커피 로고"/></h1>
+            <!-- 로고 마무리 -->
+            <ul id="main">
+                <li>
+                    <a><h2>매머드 커피</h2></a>
+                    <ul class="sub_menu">
+                        <li><a class="loader"><p>브랜드 소개</p></a></li>
+                        <li><a class="loader"><p>연혁</p></a></li>
+                        <li><a class="loader"><p>언론보도</p></a></li>
+                        <li><a class="loader"><p>오시는 길</p></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a><h2>메뉴 소개</h2></a>
+                    <ul class="sub_menu">
+                        <li><a class="loader"><p>신메뉴</p></a></li>
+                        <li><a class="loader"><p>매머드 익스프레스</p></a></li>
+                        <li><a class="loader"><p>매머드 커피</p></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a><h2>가맹 안내</h2></a>
+                    <ul class="sub_menu">
+                        <li><a class="loader"><p>가맹 안내</p></a></li>
+                        <li><a class="loader"><p>가맹 비용</p></a></li>
+                        <li><a class="loader"><p>인테리어</p></a></li>
+                        <li><a class="loader"><p>가맹 문의</p></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a><h2>매머드오더</h2></a>
+                </li>
+            </ul>
+            <img src="img/fall_leaf04.png" id="gom"/>
+        </div>
+    </header>
+    <div id="ani">
+        <img src="img/point.png" />
+    </div>
+
+    <!-- header 마무리 -->
+    <!-- 상단 이모티콘 모음 -->
+    <ul id="sns">
+        <li><a class="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a class="instar"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a class="face-book"><i class="fa-brands fa-facebook"></i></a></li>
+    </ul>
+    <!-- 상단 이모티콘 모음 마무리 -->
+    
+    
+    <!-- 중앙 글자 시작 -->
+    <article class="txtBox">
+        <p class="txt">전국 매장 수</p>
+        <P class="count">0</P>
+        <p class="tit">호점 달성</p>
+        <div class="button"><a href="#">가맹문의</a></div>
+    </article>
+    <!-- 중앙 글자 마무리 -->
+    
+    <!-- 하단 사이드 시작 -->
+    <aside id="footer">
+        <a href="#"><img src="img/fall_leaf02.png" alt="매머드커피마스코트" /></a>
+        <div class="footer_b">
+            <div class="footer_menu">
+                <p>공지사항</p>
+                <a href="#"><img src="img/community_1.jpg" /></a>
+            </div>
+            <div class="footer_menu">
+                <p>자주 묻는 질문</p>
+                <a href="#"><img src="img/community_2.jpg"/></a>
+            </div>
+            <div class="footer_menu">
+                <p>이벤트</p>
+                <a href="#"><img src="img/community_3.jpg"/></a>
+            </div>
+        </div>
+    </aside>
+    <!-- 하단 사이드 마무리 -->
+</body>
+</html>
